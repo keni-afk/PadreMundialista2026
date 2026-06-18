@@ -29,7 +29,7 @@ export default function PlayerCard({ player, showName = false, revealed = false 
       .then(r => r.json())
       .then(d => {
         const p = d?.player?.[0]
-        const url = p?.strCutout || p?.strThumb || null
+        const url = p?.strThumb || p?.strCutout || null
         setPhotoUrl(url)
       })
       .catch(() => setPhotoUrl(null))

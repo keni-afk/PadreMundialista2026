@@ -9,7 +9,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#F6B40E",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e0i2051750317027",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "secondaryColor": "#CC0000",
     "accentColor": "#FFD700",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a19jje1761592498",
-    "faceTop": 22
+    "faceTop": 30
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#ED2939",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h9u9vz1733653583",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#003087",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "secondaryColor": "#009C3B",
     "accentColor": "#003087",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ejuxsh1750271859",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "secondaryColor": "#003087",
     "accentColor": "#CC0000",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/trk5271750271712",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "secondaryColor": "#F1BF00",
     "accentColor": "#FFFFFF",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0ml2zi1761148957",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "secondaryColor": "#F1BF00",
     "accentColor": "#FFFFFF",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m9n4ja1761512633",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 9,
@@ -117,7 +117,7 @@
     "secondaryColor": "#003087",
     "accentColor": "#CC0000",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#000000",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3blc581757088735",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "secondaryColor": "#000000",
     "accentColor": "#FDDA24",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o4flia1764089447",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#F6B40E",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwxq811759408924",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#F6B40E",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#003087",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "secondaryColor": "#F1BF00",
     "accentColor": "#FFFFFF",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/srwppu1424795582",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "secondaryColor": "#F1BF00",
     "accentColor": "#FFFFFF",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/29005498.png",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "secondaryColor": "#003087",
     "accentColor": "#FFFFFF",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "secondaryColor": "#CC0000",
     "accentColor": "#FFD700",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690",
-    "faceTop": 10
+    "faceTop": 30
   },
   {
     "id": 20,
@@ -237,6 +237,6 @@
     "secondaryColor": "#FFFFFF",
     "accentColor": "#000000",
     "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5249151768499204",
-    "faceTop": 10
+    "faceTop": 30
   }
 ]
