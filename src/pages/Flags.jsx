@@ -50,7 +50,7 @@ export default function Flags({ onBack }) {
           <span className="text-2xl">🚩</span>
           <h2
             className="font-black uppercase tracking-wider text-white"
-            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
+            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
           >
             Banderas del Mundial
           </h2>
@@ -64,14 +64,14 @@ export default function Flags({ onBack }) {
         <div className="text-center animate-fade-in">
           <p
             className="font-black text-white"
-            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(1.2rem, 2.6vw, 1.8rem)' }}
+            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(1.2rem, 2.6vw, 1.8rem)' }}
           >
             Selecciona el país que
           </p>
           <p
             className="font-black mt-1"
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
               fontSize: 'clamp(1.2rem, 2.6vw, 1.8rem)',
               background: 'linear-gradient(135deg, #FF4560, #FB8C00)',
               WebkitBackgroundClip: 'text',

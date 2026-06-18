@@ -56,7 +56,7 @@ function QuizSetup({ onStart, onBack }) {
           <span className="text-2xl">🧠</span>
           <h2
             className="font-black uppercase tracking-wider text-white"
-            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
+            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
           >
             Quiz Mundialista
           </h2>
@@ -72,7 +72,7 @@ function QuizSetup({ onStart, onBack }) {
           <h1
             className="font-black uppercase"
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
               fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)',
               background: 'linear-gradient(135deg, #FFB800, #FF8C00)',
               WebkitBackgroundClip: 'text',
@@ -114,7 +114,7 @@ function QuizSetup({ onStart, onBack }) {
                   boxShadow: `0 6px 24px ${glows[i]}`,
                 }}
               >
-                <span style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1 }}>
+                <span style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(2rem, 4vw, 3rem)', lineHeight: 1 }}>
                   {n}
                 </span>
                 <span className="text-white/60 text-xs uppercase tracking-wider">
@@ -144,13 +144,13 @@ function QuizSetup({ onStart, onBack }) {
               onKeyDown={(e) => e.key === 'Enter' && handleCustomStart()}
               placeholder={`1 – ${max}`}
               className="flex-1 rounded-2xl px-5 py-4 text-2xl font-bold text-white text-center bg-white/10 border-2 border-white/20 focus:outline-none focus:border-yellow-400 transition-all"
-              style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif' }}
+              style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif' }}
             />
             <button
               onClick={handleCustomStart}
               className="px-6 py-4 rounded-2xl font-black text-black text-xl uppercase tracking-wider transition-all duration-200 hover:scale-105 active:scale-95 whitespace-nowrap"
               style={{
-                fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+                fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
                 background: 'linear-gradient(135deg, #FFD700, #FF9500)',
                 boxShadow: '0 4px 24px rgba(255,215,0,0.5)',
               }}
@@ -190,7 +190,7 @@ function QuizCompleted({ score, total, onRestart, onBack }) {
         <h1
           className="font-black uppercase mb-3"
           style={{
-            fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+            fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
             fontSize: 'clamp(2rem, 4vw, 3rem)',
             background: 'linear-gradient(135deg, #FFB800, #FFEA70, #FF8C00)',
             backgroundSize: '200% auto',
@@ -206,7 +206,7 @@ function QuizCompleted({ score, total, onRestart, onBack }) {
         <p
           className="font-black"
           style={{
-            fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+            fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
             fontSize: 'clamp(3.5rem, 9vw, 5.5rem)',
             background: 'linear-gradient(135deg, #FFB800, #FF8C00)',
             WebkitBackgroundClip: 'text',
@@ -225,7 +225,7 @@ function QuizCompleted({ score, total, onRestart, onBack }) {
         <button
           onClick={onRestart}
           className="px-10 py-4 rounded-2xl font-black text-black text-xl uppercase tracking-wider hover:scale-105 active:scale-95 transition-all"
-          style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', background: 'linear-gradient(135deg, #FFB800, #FF8C00)', boxShadow: '0 4px 28px rgba(255,184,0,0.50)', border: 'none' }}
+          style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', background: 'linear-gradient(135deg, #FFB800, #FF8C00)', boxShadow: '0 4px 28px rgba(255,184,0,0.50)', border: 'none' }}
         >
           Jugar de nuevo
         </button>
@@ -320,7 +320,7 @@ export default function Quiz({ onBack }) {
           <span className="text-2xl">🧠</span>
           <h2
             className="font-black uppercase tracking-wider text-white"
-            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
+            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
           >
             Quiz Mundialista
           </h2>
@@ -329,7 +329,7 @@ export default function Quiz({ onBack }) {
           <span className="text-white/45 text-xs uppercase tracking-wider">Pregunta</span>
           <span
             className="font-black text-white px-3 py-1 rounded-lg"
-            style={{ background: 'rgba(255,184,0,0.18)', border: '1px solid rgba(255,184,0,0.35)', fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: '0.95rem' }}
+            style={{ background: 'rgba(255,184,0,0.18)', border: '1px solid rgba(255,184,0,0.35)', fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: '0.95rem' }}
           >
             {currentIdx + 1} / {questions.length}
           </span>
@@ -411,7 +411,7 @@ export default function Quiz({ onBack }) {
               >
                 <span
                   className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-black text-lg"
-                  style={{ background: 'rgba(0,0,0,0.25)', fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif' }}
+                  style={{ background: 'rgba(0,0,0,0.25)', fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif' }}
                 >
                   {style.label}
                 </span>
