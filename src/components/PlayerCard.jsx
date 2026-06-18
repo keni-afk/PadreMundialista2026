@@ -85,27 +85,12 @@ export default function PlayerCard({ player, showName = false, revealed = false 
               onLoad={() => setPhotoReady(true)}
               onError={() => { setPhotoUrl(null); setPhotoReady(false) }}
               className="h-full w-full object-contain object-bottom"
-              style={{ opacity: photoReady ? 1 : 0, transition: 'opacity 0.35s ease' }}
+              style={{
+                opacity: photoReady ? 1 : 0,
+                filter: revealed ? 'blur(0px)' : 'blur(9px)',
+                transition: 'opacity 0.35s ease, filter 0.6s ease',
+              }}
             />
-
-            {/* red circle — center at faceTop% */}
-            <div style={{
-              position: 'absolute',
-              top: `${faceTop}%`,
-              left: '50%',
-              width: 118, height: 118,
-              borderRadius: '50%',
-              background: 'radial-gradient(circle at 35% 35%, #ff4d4d 0%, #cc0000 55%, #7a0000 100%)',
-              boxShadow: revealed ? 'none' : '0 0 32px rgba(255,0,0,0.8), 0 4px 18px rgba(0,0,0,0.5)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              transform: revealed ? 'translate(-50%,-50%) scale(0)' : 'translate(-50%,-50%) scale(1)',
-              opacity: revealed ? 0 : 1,
-              transition: 'transform 0.55s cubic-bezier(0.34,1.56,0.64,1), opacity 0.45s ease',
-              pointerEvents: 'none',
-              zIndex: 20,
-            }}>
-              {!revealed && <span style={{ fontSize: 40, lineHeight: 1 }}>❓</span>}
-            </div>
           </>
         ) : (
           /* ── SVG jersey fallback ──────────────── */
