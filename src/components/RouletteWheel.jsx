@@ -1,18 +1,18 @@
 import { useRef, useEffect, useCallback, forwardRef, useImperativeHandle, useState } from 'react'
 
 const SEGMENTS = [
-  { color: '#E74C3C', text: '⚽' },
-  { color: '#3498DB', text: '🏆' },
-  { color: '#2ECC71', text: '⭐' },
-  { color: '#F39C12', text: '🎯' },
-  { color: '#9B59B6', text: '🌟' },
-  { color: '#1ABC9C', text: '🏅' },
-  { color: '#E91E63', text: '⚽' },
-  { color: '#FF5722', text: '🏆' },
-  { color: '#607D8B', text: '⭐' },
-  { color: '#009688', text: '🎯' },
-  { color: '#673AB7', text: '🌟' },
-  { color: '#FF9800', text: '🏅' },
+  { color: '#E74C3C', text: '👕' },
+  { color: '#3498DB', text: '👕' },
+  { color: '#2ECC71', text: '👕' },
+  { color: '#F39C12', text: '👕' },
+  { color: '#9B59B6', text: '👕' },
+  { color: '#1ABC9C', text: '👕' },
+  { color: '#E91E63', text: '👕' },
+  { color: '#FF5722', text: '👕' },
+  { color: '#607D8B', text: '👕' },
+  { color: '#009688', text: '👕' },
+  { color: '#673AB7', text: '👕' },
+  { color: '#FF9800', text: '👕' },
 ]
 
 const RouletteWheel = forwardRef(function RouletteWheel({ onSpinComplete, disabled }, ref) {
