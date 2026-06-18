@@ -144,7 +144,11 @@ export default function Roulette({ onBack }) {
         {/* RIGHT: player + answers */}
         <div className="flex flex-col items-center gap-5 flex-1 max-w-lg w-full">
 
-          <PlayerCard player={currentPlayer} showName={false} />
+          <PlayerCard
+            player={currentPlayer}
+            showName={phase === PHASES.RESULT}
+            revealed={phase === PHASES.RESULT && isCorrect === true}
+          />
 
           {isGuessing && (
             <h3
