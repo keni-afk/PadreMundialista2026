@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Global reset ─────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; min-height: 100vh; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #07111f;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ─── Main background — stadium night ─────────────── */
+.stadium-bg {
+  background:
+    radial-gradient(ellipse 140% 55% at 50% 105%, rgba(0, 110, 40, 0.30) 0%, transparent 55%),
+    radial-gradient(ellipse 90%  45% at 50%  -5%, rgba(255, 180, 0, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 60%  35% at 15%  40%, rgba(120, 40, 220, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60%  35% at 85%  60%, rgba(0, 140, 255, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #060c1a 0%, #07111f 60%, #071510 100%);
+}
+
+/* ─── Particle float-up ────────────────────────────── */
+@keyframes float-up {
+  0%   { transform: translateY(0)    rotate(0deg);   opacity: 0.18; }
+  10%  { opacity: 0.22; }
+  90%  { opacity: 0.08; }
+  100% { transform: translateY(-110vh) rotate(540deg); opacity: 0; }
+}
+
+/* ─── Shimmer sweep ────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ─── Float bob ────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px)   rotate(-3deg); }
+  50%       { transform: translateY(-14px) rotate( 3deg); }
+}
+
+/* ─── Pulse ring ───────────────────────────────────── */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0  0px rgba(255,184,0,0.55); }
+  70%  { box-shadow: 0 0 0 22px rgba(255,184,0,0);    }
+  100% { box-shadow: 0 0 0  0px rgba(255,184,0,0);    }
+}
+
+/* ─── fadeIn / slideUp / scaleIn ──────────────────── */
+@keyframes fadeIn  { from{opacity:0}              to{opacity:1} }
+@keyframes slideUp { from{transform:translateY(32px);opacity:0} to{transform:translateY(0);opacity:1} }
+@keyframes scaleIn { from{transform:scale(.82);opacity:0}       to{transform:scale(1);opacity:1} }
+
+/* ─── Card border rainbow glow ─────────────────────── */
+@keyframes border-spin {
+  0%   { filter: hue-rotate(0deg);   }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* ─── Utility classes ──────────────────────────────── */
+.float        { animation: float        3.4s ease-in-out infinite; }
+.pulse-ring   { animation: pulse-ring   2.2s ease-out    infinite; }
+.animate-fade-in  { animation: fadeIn  .45s ease-in-out forwards; }
+.animate-slide-up { animation: slideUp .40s ease-out     forwards; }
+.animate-scale-in { animation: scaleIn .30s ease-out     forwards; }
+.animate-pulse-slow { animation: pulse 3s cubic-bezier(.4,0,.6,1) infinite; }
+.animate-bounce-slow { animation: bounce 2s infinite; }
+
+/* ─── Shimmer text ─────────────────────────────────── */
+.shimmer-text {
+  background: linear-gradient(100deg, #FFB800 0%, #FFEA70 40%, #FF8C00 60%, #FFB800 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+  filter: drop-shadow(0 2px 18px rgba(255,184,0,0.50));
+}
+
+/* ─── Game cards ───────────────────────────────────── */
+.game-card {
+  transition: transform .28s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .28s ease,
+              filter     .28s ease;
+  will-change: transform;
+}
+.game-card:hover {
+  transform: translateY(-10px) scale(1.025);
+  filter: brightness(1.08);
+}
+
+/* ─── Answer buttons ───────────────────────────────── */
+.answer-btn {
+  transition: transform .14s ease, filter .14s ease;
+  will-change: transform;
+}
+.answer-btn:hover:not(:disabled) { transform: scale(1.025); filter: brightness(1.12); }
+.answer-btn:active:not(:disabled){ transform: scale(0.97); }
+
+/* ─── Field center-circle background deco ─────────── */
+.field-circle-deco {
+  position: fixed;
+  left: 50%; top: 52%;
+  transform: translate(-50%, -50%);
+  width: min(90vw, 720px);
+  height: min(90vw, 720px);
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.04);
+  pointer-events: none;
+  z-index: 0;
+}
+.field-circle-deco::before {
+  content: '';
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.025);
+}
+.field-circle-deco::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  width: 10%; height: 10%;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.025);
+}
+
+/* ─── Scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.04); }
+::-webkit-scrollbar-thumb { background: rgba(255,184,0,0.35); border-radius: 3px; }

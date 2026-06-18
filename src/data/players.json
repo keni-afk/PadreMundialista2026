@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Lionel Messi",
+    "country": "Argentina",
+    "countryIso": "ar",
+    "jerseyNumber": 10,
+    "primaryColor": "#74ACDF",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#F6B40E"
+  },
+  {
+    "id": 2,
+    "name": "Cristiano Ronaldo",
+    "country": "Portugal",
+    "countryIso": "pt",
+    "jerseyNumber": 7,
+    "primaryColor": "#006600",
+    "secondaryColor": "#CC0000",
+    "accentColor": "#FFD700"
+  },
+  {
+    "id": 3,
+    "name": "Kylian Mbappé",
+    "country": "Francia",
+    "countryIso": "fr",
+    "jerseyNumber": 10,
+    "primaryColor": "#002395",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#ED2939"
+  },
+  {
+    "id": 4,
+    "name": "Erling Haaland",
+    "country": "Noruega",
+    "countryIso": "no",
+    "jerseyNumber": 9,
+    "primaryColor": "#EF2B2D",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#003087"
+  },
+  {
+    "id": 5,
+    "name": "Vinicius Jr",
+    "country": "Brasil",
+    "countryIso": "br",
+    "jerseyNumber": 7,
+    "primaryColor": "#FFD700",
+    "secondaryColor": "#009C3B",
+    "accentColor": "#003087"
+  },
+  {
+    "id": 6,
+    "name": "Jude Bellingham",
+    "country": "Inglaterra",
+    "countryIso": "gb-eng",
+    "jerseyNumber": 22,
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#003087",
+    "accentColor": "#CC0000"
+  },
+  {
+    "id": 7,
+    "name": "Rodri",
+    "country": "España",
+    "countryIso": "es",
+    "jerseyNumber": 16,
+    "primaryColor": "#AA151B",
+    "secondaryColor": "#F1BF00",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 8,
+    "name": "Lamine Yamal",
+    "country": "España",
+    "countryIso": "es",
+    "jerseyNumber": 19,
+    "primaryColor": "#AA151B",
+    "secondaryColor": "#F1BF00",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 9,
+    "name": "Neymar Jr",
+    "country": "Brasil",
+    "countryIso": "br",
+    "jerseyNumber": 10,
+    "primaryColor": "#FFD700",
+    "secondaryColor": "#009C3B",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 10,
+    "name": "Harry Kane",
+    "country": "Inglaterra",
+    "countryIso": "gb-eng",
+    "jerseyNumber": 9,
+    "primaryColor": "#FFFFFF",
+    "secondaryColor": "#003087",
+    "accentColor": "#CC0000"
+  },
+  {
+    "id": 11,
+    "name": "Mohamed Salah",
+    "country": "Egipto",
+    "countryIso": "eg",
+    "jerseyNumber": 11,
+    "primaryColor": "#CC0000",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#000000"
+  },
+  {
+    "id": 12,
+    "name": "Kevin De Bruyne",
+    "country": "Bélgica",
+    "countryIso": "be",
+    "jerseyNumber": 7,
+    "primaryColor": "#CC0001",
+    "secondaryColor": "#000000",
+    "accentColor": "#FDDA24"
+  },
+  {
+    "id": 13,
+    "name": "Lautaro Martínez",
+    "country": "Argentina",
+    "countryIso": "ar",
+    "jerseyNumber": 22,
+    "primaryColor": "#74ACDF",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#F6B40E"
+  },
+  {
+    "id": 14,
+    "name": "Julián Álvarez",
+    "country": "Argentina",
+    "countryIso": "ar",
+    "jerseyNumber": 9,
+    "primaryColor": "#74ACDF",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#F6B40E"
+  },
+  {
+    "id": 15,
+    "name": "Luka Modrić",
+    "country": "Croacia",
+    "countryIso": "hr",
+    "jerseyNumber": 10,
+    "primaryColor": "#FF0000",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#003087"
+  },
+  {
+    "id": 16,
+    "name": "Pedri",
+    "country": "España",
+    "countryIso": "es",
+    "jerseyNumber": 8,
+    "primaryColor": "#AA151B",
+    "secondaryColor": "#F1BF00",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 17,
+    "name": "Gavi",
+    "country": "España",
+    "countryIso": "es",
+    "jerseyNumber": 6,
+    "primaryColor": "#AA151B",
+    "secondaryColor": "#F1BF00",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 18,
+    "name": "Son Heung-min",
+    "country": "Corea del Sur",
+    "countryIso": "kr",
+    "jerseyNumber": 7,
+    "primaryColor": "#C60C30",
+    "secondaryColor": "#003087",
+    "accentColor": "#FFFFFF"
+  },
+  {
+    "id": 19,
+    "name": "Bruno Fernandes",
+    "country": "Portugal",
+    "countryIso": "pt",
+    "jerseyNumber": 8,
+    "primaryColor": "#006600",
+    "secondaryColor": "#CC0000",
+    "accentColor": "#FFD700"
+  },
+  {
+    "id": 20,
+    "name": "Federico Valverde",
+    "country": "Uruguay",
+    "countryIso": "uy",
+    "jerseyNumber": 8,
+    "primaryColor": "#5AAAA0",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#000000"
+  }
+]

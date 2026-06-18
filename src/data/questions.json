@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué selección ganó el Mundial 2022 en Qatar?",
+    "options": ["Argentina", "Francia", "Brasil", "España"],
+    "correct": 0
+  },
+  {
+    "id": 2,
+    "question": "¿Quién es conocido por el apodo 'CR7'?",
+    "options": ["Cristiano Ronaldo", "Carlos Romero", "César Ramírez", "Carlos Riquelme"],
+    "correct": 0
+  },
+  {
+    "id": 3,
+    "question": "¿En qué selección juega Kylian Mbappé?",
+    "options": ["Francia", "España", "Brasil", "Portugal"],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "question": "¿Qué país organizó el Mundial 2014?",
+    "options": ["Brasil", "Argentina", "Alemania", "México"],
+    "correct": 0
+  },
+  {
+    "id": 5,
+    "question": "¿Cuántos Balones de Oro ha ganado Lionel Messi?",
+    "options": ["8", "5", "7", "6"],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "question": "¿En qué año Argentina ganó su primer Mundial?",
+    "options": ["1978", "1982", "1970", "1974"],
+    "correct": 0
+  },
+  {
+    "id": 7,
+    "question": "¿Qué selección ha ganado más Mundiales?",
+    "options": ["Brasil (5)", "Alemania (4)", "Argentina (3)", "Italia (4)"],
+    "correct": 0
+  },
+  {
+    "id": 8,
+    "question": "¿Cómo se llama el estadio más grande del mundo?",
+    "options": ["Rungrado (Corea del Norte)", "Camp Nou (España)", "Maracaná (Brasil)", "Azteca (México)"],
+    "correct": 0
+  },
+  {
+    "id": 9,
+    "question": "¿Qué jugador es conocido como 'El Fenómeno'?",
+    "options": ["Ronaldo Nazário", "Ronaldinho", "Neymar", "Romario"],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "question": "¿En qué país se celebra el Mundial 2026?",
+    "options": ["EE.UU., Canadá y México", "Brasil y Argentina", "España y Portugal", "Alemania y Francia"],
+    "correct": 0
+  },
+  {
+    "id": 11,
+    "question": "¿Cuántos equipos participan en el Mundial 2026?",
+    "options": ["48", "32", "36", "64"],
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "question": "¿Quién marcó el famoso 'Gol del Siglo' en México 1986?",
+    "options": ["Diego Maradona", "Pelé", "Zidane", "Ronaldo"],
+    "correct": 0
+  },
+  {
+    "id": 13,
+    "question": "¿En qué club juega Vinícius Jr actualmente?",
+    "options": ["Real Madrid", "Barcelona", "PSG", "Manchester City"],
+    "correct": 0
+  },
+  {
+    "id": 14,
+    "question": "¿Cuál es el apodo de la selección brasileña?",
+    "options": ["La Canarinha", "La Celeste", "La Roja", "La Albiceleste"],
+    "correct": 0
+  },
+  {
+    "id": 15,
+    "question": "¿Qué jugador usó el número 10 en Argentina durante Qatar 2022?",
+    "options": ["Lionel Messi", "Lautaro Martínez", "Ángel Di María", "Paulo Dybala"],
+    "correct": 0
+  },
+  {
+    "id": 16,
+    "question": "¿En qué año se jugó el primer Mundial de fútbol?",
+    "options": ["1930", "1920", "1934", "1938"],
+    "correct": 0
+  },
+  {
+    "id": 17,
+    "question": "¿Cuál es el apodo de Erling Haaland?",
+    "options": ["La Máquina de Goles", "El Toro", "El Cohete", "El Vikingo"],
+    "correct": 0
+  },
+  {
+    "id": 18,
+    "question": "¿Qué país organizó el Mundial 2018?",
+    "options": ["Rusia", "Francia", "Alemania", "Brasil"],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "question": "¿Cuántos goles marcó Mbappé en el Mundial de Qatar 2022?",
+    "options": ["8", "5", "6", "10"],
+    "correct": 0
+  },
+  {
+    "id": 20,
+    "question": "¿Quién es el máximo goleador histórico de la selección de Portugal?",
+    "options": ["Cristiano Ronaldo", "Luis Figo", "Eusébio", "Rui Costa"],
+    "correct": 0
+  },
+  {
+    "id": 21,
+    "question": "¿Cuál es el apodo de la selección argentina?",
+    "options": ["La Albiceleste", "La Celeste", "La Blanquirroja", "La Verdeamarela"],
+    "correct": 0
+  },
+  {
+    "id": 22,
+    "question": "¿Qué jugador ganó el Balón de Oro en el Mundial 2022?",
+    "options": ["Lionel Messi", "Mbappé", "Modric", "Benzema"],
+    "correct": 0
+  },
+  {
+    "id": 23,
+    "question": "¿Cuántas veces ganó Brasil el Mundial de fútbol?",
+    "options": ["5 veces", "4 veces", "6 veces", "3 veces"],
+    "correct": 0
+  },
+  {
+    "id": 24,
+    "question": "¿En qué club juega Jude Bellingham?",
+    "options": ["Real Madrid", "Bayern Múnich", "Liverpool", "Chelsea"],
+    "correct": 0
+  },
+  {
+    "id": 25,
+    "question": "¿Cómo se llama el estadio del Real Madrid?",
+    "options": ["Santiago Bernabéu", "Camp Nou", "San Siro", "Old Trafford"],
+    "correct": 0
+  },
+  {
+    "id": 26,
+    "question": "¿Qué país ganó el Mundial de Sudáfrica 2010?",
+    "options": ["España", "Países Bajos", "Alemania", "Brasil"],
+    "correct": 0
+  },
+  {
+    "id": 27,
+    "question": "¿Cuánto dura un partido de fútbol reglamentario?",
+    "options": ["90 minutos", "80 minutos", "100 minutos", "75 minutos"],
+    "correct": 0
+  },
+  {
+    "id": 28,
+    "question": "¿Quién es el entrenador más exitoso en la historia del Barça?",
+    "options": ["Johan Cruyff", "Pep Guardiola", "Luis Aragonés", "Xavi Hernández"],
+    "correct": 0
+  },
+  {
+    "id": 29,
+    "question": "¿Qué selección tiene la camiseta amarilla como la principal?",
+    "options": ["Brasil", "Colombia", "Ecuador", "Suecia"],
+    "correct": 0
+  },
+  {
+    "id": 30,
+    "question": "¿Cuántos jugadores tiene cada equipo en el campo durante un partido?",
+    "options": ["11", "10", "12", "9"],
+    "correct": 0
+  },
+  {
+    "id": 31,
+    "question": "¿Cuál es la competición de clubes más importante del mundo?",
+    "options": ["UEFA Champions League", "Copa del Rey", "Serie A", "Premier League"],
+    "correct": 0
+  },
+  {
+    "id": 32,
+    "question": "¿Quién marcó el gol del triunfo en la final del Mundial 2022?",
+    "options": ["Gonzalo Montiel (penal)", "Messi", "Mbappé", "Di María"],
+    "correct": 0
+  },
+  {
+    "id": 33,
+    "question": "¿En qué selección juega Lamine Yamal?",
+    "options": ["España", "Francia", "Marruecos", "Italia"],
+    "correct": 0
+  },
+  {
+    "id": 34,
+    "question": "¿Qué país tiene el apodo 'Los Leones Indomables'?",
+    "options": ["Camerún", "Nigeria", "Senegal", "Ghana"],
+    "correct": 0
+  },
+  {
+    "id": 35,
+    "question": "¿Cuántos goles marcó Messi en toda su carrera en Mundiales?",
+    "options": ["13", "8", "10", "15"],
+    "correct": 0
+  }
+]
