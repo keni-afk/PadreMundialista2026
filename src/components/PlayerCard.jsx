@@ -87,7 +87,7 @@ export default function PlayerCard({ player, showName = false, revealed = false 
               className="h-full w-full object-contain object-bottom"
               style={{
                 opacity: photoReady ? 1 : 0,
-                filter: revealed ? 'blur(0px)' : 'blur(7px)',
+                filter: revealed ? 'blur(0px)' : 'blur(4px)',
                 transition: 'opacity 0.35s ease, filter 0.6s ease',
               }}
             />
