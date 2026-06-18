@@ -89,7 +89,7 @@ export default function Roulette({ onBack }) {
           <span className="text-2xl">🎡</span>
           <h2
             className="font-black uppercase tracking-wider text-white"
-            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
+            style={{ fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
           >
             Ruleta Mundialista
           </h2>
@@ -105,7 +105,7 @@ export default function Roulette({ onBack }) {
           <h1
             className="text-center font-black uppercase"
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
               fontSize: 'clamp(0.95rem, 2vw, 1.35rem)',
               background: 'linear-gradient(90deg, #FFB800, #FF8C00)',
               WebkitBackgroundClip: 'text',
@@ -128,7 +128,7 @@ export default function Roulette({ onBack }) {
             disabled={phase === PHASES.SPINNING}
             className="px-14 py-4 rounded-2xl font-black text-xl uppercase tracking-wider transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             style={{
-              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif',
               background: phase === PHASES.SPINNING
                 ? 'rgba(255,184,0,0.2)'
                 : 'linear-gradient(135deg, #FFB800, #FF8C00)',
@@ -153,7 +153,7 @@ export default function Roulette({ onBack }) {
           {isGuessing && (
             <h3
               className="font-black text-white text-center text-2xl animate-fade-in"
-              style={{ textShadow: '0 0 24px rgba(255,184,0,0.5)', fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize: 'clamp(1.1rem,2.2vw,1.6rem)' }}
+              style={{ textShadow: '0 0 24px rgba(255,184,0,0.5)', fontFamily: '-apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif', fontSize: 'clamp(1.1rem,2.2vw,1.6rem)' }}
             >
               ¿Qué jugador es este?
             </h3>
@@ -182,7 +182,7 @@ export default function Roulette({ onBack }) {
                     key={opt.id}
                     onClick={() => handleAnswer(idx)}
                     disabled={phase === PHASES.RESULT}
-                    className="answer-btn rounded-2xl p-4 text-left font-bold text-white text-lg leading-snug"
+                    className="answer-btn rounded-xl p-3 text-left font-bold text-white text-base leading-tight"
                     style={{
                       background: bg,
                       border: `2px solid ${border}`,
@@ -190,7 +190,7 @@ export default function Roulette({ onBack }) {
                       opacity: phase === PHASES.RESULT && opt.id !== currentPlayer.id && idx !== selectedIdx ? 0.45 : 1,
                     }}
                   >
-                    <span className="text-xs text-white/50 block mb-0.5">{String.fromCharCode(65 + idx)})</span>
+                    <span className="text-white/50 font-semibold mr-1">{String.fromCharCode(65 + idx)})</span>
                     {opt.name}
                     {phase === PHASES.RESULT && opt.id === currentPlayer.id && <span className="ml-1.5">✅</span>}
                     {phase === PHASES.RESULT && idx === selectedIdx && opt.id !== currentPlayer.id && <span className="ml-1.5">❌</span>}
