@@ -99,7 +99,7 @@ export default function Home({ onNavigate }) {
         <h1
           className="shimmer-text font-black uppercase"
           style={{
-            fontFamily: 'Orbitron, sans-serif',
+            fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
             fontSize: 'clamp(1.8rem, 4vw, 3.2rem)',
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
@@ -114,7 +114,7 @@ export default function Home({ onNavigate }) {
           <h2
             className="font-black uppercase text-white tracking-widest"
             style={{
-              fontFamily: 'Orbitron, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
               fontSize: 'clamp(1rem, 2.5vw, 1.8rem)',
               textShadow: '0 0 40px rgba(255,184,0,0.45)',
             }}
@@ -204,7 +204,7 @@ export default function Home({ onNavigate }) {
                 <h3
                   className="font-black text-white leading-tight"
                   style={{
-                    fontFamily: 'Orbitron, sans-serif',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
                     fontSize: 'clamp(0.95rem, 1.6vw, 1.25rem)',
                     textShadow: '0 2px 12px rgba(0,0,0,0.5)',
                   }}
@@ -230,7 +230,7 @@ export default function Home({ onNavigate }) {
                     background: 'rgba(255,255,255,0.18)',
                     border: '1.5px solid rgba(255,255,255,0.30)',
                     backdropFilter: 'blur(8px)',
-                    fontFamily: 'Orbitron, sans-serif',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
                     fontSize: 'clamp(0.82rem, 1.3vw, 0.98rem)',
                     textShadow: '0 1px 6px rgba(0,0,0,0.4)',
                   }}

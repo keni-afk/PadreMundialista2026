@@ -86,7 +86,7 @@ const Modal = ({ isOpen, isWin, playerName, onClose }) => {
             <h2
               className="font-black uppercase"
               style={{
-                fontFamily: 'Orbitron, sans-serif',
+                fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
                 fontSize: 'clamp(1.6rem, 4vw, 2.4rem)',
                 background: isWin
                   ? 'linear-gradient(135deg, #FFB800, #FFEA70, #FF8C00)'
@@ -135,7 +135,7 @@ const Modal = ({ isOpen, isWin, playerName, onClose }) => {
             onClick={onClose}
             className="mt-2 px-12 py-4 rounded-2xl font-black text-xl uppercase tracking-wider transition-all duration-200 hover:scale-105 active:scale-95"
             style={{
-              fontFamily: 'Orbitron, sans-serif',
+              fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif',
               background: isWin
                 ? 'linear-gradient(135deg, #FFB800, #FF8C00)'
                 : 'linear-gradient(135deg, #FF4560, #CC2233)',

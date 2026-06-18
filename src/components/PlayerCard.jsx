@@ -96,7 +96,7 @@ export default function PlayerCard({ player, showName = false, revealed = false 
           /* ── SVG jersey fallback ──────────────── */
           <div className="relative flex justify-center items-center w-full h-full">
             <div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none"
-                 style={{ fontSize: 200, fontWeight: 900, fontFamily: 'Orbitron,sans-serif', color: 'rgba(0,0,0,0.12)', lineHeight: 1 }}>
+                 style={{ fontSize: 200, fontWeight: 900, fontFamily: '-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', color: 'rgba(0,0,0,0.12)', lineHeight: 1 }}>
               {jerseyNumber}
             </div>
             <svg width="180" height="240" viewBox="0 0 180 240" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@ export default function PlayerCard({ player, showName = false, revealed = false 
               <path d="M74,82 Q90,92 106,82" fill="none" stroke={secondaryColor} strokeWidth="4"/>
               <rect x="54" y="118" width="72" height="18" fill={secondaryColor} opacity="0.4" rx="2"/>
               <text x="90" y="178" textAnchor="middle" dominantBaseline="middle"
-                    fontSize="32" fontWeight="900" fontFamily="Orbitron,sans-serif"
+                    fontSize="32" fontWeight="900" fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
                     fill={accentColor} stroke="rgba(0,0,0,0.3)" strokeWidth="1">{jerseyNumber}</text>
               <rect x="62" y="215" width="56" height="28" rx="4" fill={secondaryColor} opacity="0.8"/>
               <circle cx="90" cy="52" r="36" fill="white" stroke={accentColor} strokeWidth="3" opacity="0.95"/>
@@ -121,7 +121,7 @@ export default function PlayerCard({ player, showName = false, revealed = false 
              className="h-6 rounded shadow" onError={e => { e.target.style.display='none' }}/>
         {showName
           ? <p className="text-white font-bold text-center mt-1 px-2 leading-tight"
-               style={{ textShadow:'0 2px 8px rgba(0,0,0,0.8)', fontFamily:'Orbitron,sans-serif', fontSize:'clamp(0.85rem,1.5vw,1.05rem)' }}>
+               style={{ textShadow:'0 2px 8px rgba(0,0,0,0.8)', fontFamily:'-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif', fontSize:'clamp(0.85rem,1.5vw,1.05rem)' }}>
               {name}
             </p>
           : <p className="text-white/60 text-sm font-semibold uppercase tracking-wider">{country}</p>
