@@ -81,7 +81,7 @@ const GAMES = [
 /* ─── Home page ──────────────────────────────────────── */
 export default function Home({ onNavigate }) {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-between py-10 px-4 overflow-hidden">
+    <div className="relative h-screen flex flex-col items-center justify-between py-5 px-4 overflow-hidden">
 
       {/* Particles */}
       <Particles />
@@ -90,17 +90,17 @@ export default function Home({ onNavigate }) {
       <div className="field-circle-deco" />
 
       {/* ── Header ───────────────────────────────────── */}
-      <header className="relative z-10 text-center animate-slide-up flex flex-col items-center gap-3">
+      <header className="relative z-10 text-center animate-slide-up flex flex-col items-center gap-2">
 
         {/* Floating ball */}
-        <div className="float text-7xl select-none" style={{ lineHeight: 1 }}>⚽</div>
+        <div className="float text-5xl select-none" style={{ lineHeight: 1 }}>⚽</div>
 
         {/* Title */}
         <h1
           className="shimmer-text font-black uppercase"
           style={{
             fontFamily: 'Orbitron, sans-serif',
-            fontSize: 'clamp(2.2rem, 5vw, 4.2rem)',
+            fontSize: 'clamp(1.8rem, 4vw, 3.2rem)',
             letterSpacing: '-0.02em',
             lineHeight: 1.1,
           }}
@@ -109,37 +109,37 @@ export default function Home({ onNavigate }) {
         </h1>
 
         {/* Sub-title */}
-        <div className="flex items-center gap-3 mt-1">
-          <span className="text-white/25 text-2xl">⚽</span>
+        <div className="flex items-center gap-3">
+          <span className="text-white/25 text-xl">⚽</span>
           <h2
             className="font-black uppercase text-white tracking-widest"
             style={{
               fontFamily: 'Orbitron, sans-serif',
-              fontSize: 'clamp(1.3rem, 3vw, 2.4rem)',
+              fontSize: 'clamp(1rem, 2.5vw, 1.8rem)',
               textShadow: '0 0 40px rgba(255,184,0,0.45)',
             }}
           >
             Mundialista 2026
           </h2>
-          <span className="text-white/25 text-2xl">⚽</span>
+          <span className="text-white/25 text-xl">⚽</span>
         </div>
 
         {/* Divider */}
         <div
-          className="h-0.5 rounded-full mt-2"
+          className="h-0.5 rounded-full"
           style={{
-            width: 'clamp(200px, 40vw, 480px)',
+            width: 'clamp(180px, 36vw, 420px)',
             background: 'linear-gradient(90deg, transparent, #FFB800, rgba(255,184,0,0.4), transparent)',
           }}
         />
 
-        <p className="text-white/40 text-base tracking-widest uppercase mt-1">
+        <p className="text-white/40 text-sm tracking-widest uppercase">
           Selecciona un juego y ¡a jugar!
         </p>
       </header>
 
       {/* ── Game cards ───────────────────────────────── */}
-      <main className="relative z-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 px-2 my-6">
+      <main className="relative z-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 px-2">
         {GAMES.map((game, idx) => (
           <button
             key={game.id}
@@ -175,7 +175,7 @@ export default function Home({ onNavigate }) {
                 }}
               />
 
-              <div className="relative p-7 flex flex-col items-center text-center gap-4">
+              <div className="relative p-5 flex flex-col items-center text-center gap-3">
                 {/* Badge */}
                 <span
                   className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full self-start"
@@ -191,7 +191,7 @@ export default function Home({ onNavigate }) {
 
                 {/* Emoji */}
                 <div
-                  className="text-7xl select-none"
+                  className="text-5xl select-none"
                   style={{
                     lineHeight: 1,
                     filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.5))',
@@ -205,7 +205,7 @@ export default function Home({ onNavigate }) {
                   className="font-black text-white leading-tight"
                   style={{
                     fontFamily: 'Orbitron, sans-serif',
-                    fontSize: 'clamp(1.05rem, 1.8vw, 1.4rem)',
+                    fontSize: 'clamp(0.95rem, 1.6vw, 1.25rem)',
                     textShadow: '0 2px 12px rgba(0,0,0,0.5)',
                   }}
                 >
@@ -214,10 +214,10 @@ export default function Home({ onNavigate }) {
 
                 {/* Description */}
                 <p
-                  className="leading-relaxed"
+                  className="leading-snug"
                   style={{
                     color: 'rgba(255,255,255,0.75)',
-                    fontSize: 'clamp(0.85rem, 1.3vw, 1rem)',
+                    fontSize: 'clamp(0.78rem, 1.2vw, 0.92rem)',
                   }}
                 >
                   {game.description}
@@ -225,13 +225,13 @@ export default function Home({ onNavigate }) {
 
                 {/* CTA button */}
                 <div
-                  className="mt-2 w-full py-3.5 rounded-2xl font-black text-white text-lg uppercase tracking-widest text-center"
+                  className="w-full py-3 rounded-2xl font-black text-white uppercase tracking-widest text-center"
                   style={{
                     background: 'rgba(255,255,255,0.18)',
                     border: '1.5px solid rgba(255,255,255,0.30)',
                     backdropFilter: 'blur(8px)',
                     fontFamily: 'Orbitron, sans-serif',
-                    fontSize: 'clamp(0.9rem, 1.4vw, 1.05rem)',
+                    fontSize: 'clamp(0.82rem, 1.3vw, 0.98rem)',
                     textShadow: '0 1px 6px rgba(0,0,0,0.4)',
                   }}
                 >
@@ -244,8 +244,8 @@ export default function Home({ onNavigate }) {
       </main>
 
       {/* ── Footer ───────────────────────────────────── */}
-      <footer className="relative z-10 text-center flex flex-col items-center gap-2">
-        <div className="flex items-center gap-2 text-white/20 text-sm">
+      <footer className="relative z-10 text-center">
+        <div className="flex items-center gap-2 text-white/20">
           <span>⚽</span>
           <span className="uppercase tracking-widest text-xs">Actividad Corporativa · Día del Padre 2026</span>
           <span>⚽</span>
