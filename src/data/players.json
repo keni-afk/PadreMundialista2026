@@ -7,7 +7,9 @@
     "jerseyNumber": 10,
     "primaryColor": "#74ACDF",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#F6B40E"
+    "accentColor": "#F6B40E",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e0i2051750317027",
+    "faceTop": 10
   },
   {
     "id": 2,
@@ -17,7 +19,9 @@
     "jerseyNumber": 7,
     "primaryColor": "#006600",
     "secondaryColor": "#CC0000",
-    "accentColor": "#FFD700"
+    "accentColor": "#FFD700",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a19jje1761592498",
+    "faceTop": 22
   },
   {
     "id": 3,
@@ -27,7 +31,9 @@
     "jerseyNumber": 10,
     "primaryColor": "#002395",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#ED2939"
+    "accentColor": "#ED2939",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h9u9vz1733653583",
+    "faceTop": 10
   },
   {
     "id": 4,
@@ -37,7 +43,9 @@
     "jerseyNumber": 9,
     "primaryColor": "#EF2B2D",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#003087"
+    "accentColor": "#003087",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465",
+    "faceTop": 10
   },
   {
     "id": 5,
@@ -47,7 +55,9 @@
     "jerseyNumber": 7,
     "primaryColor": "#FFD700",
     "secondaryColor": "#009C3B",
-    "accentColor": "#003087"
+    "accentColor": "#003087",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ejuxsh1750271859",
+    "faceTop": 10
   },
   {
     "id": 6,
@@ -57,7 +67,9 @@
     "jerseyNumber": 22,
     "primaryColor": "#FFFFFF",
     "secondaryColor": "#003087",
-    "accentColor": "#CC0000"
+    "accentColor": "#CC0000",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/trk5271750271712",
+    "faceTop": 10
   },
   {
     "id": 7,
@@ -67,7 +79,9 @@
     "jerseyNumber": 16,
     "primaryColor": "#AA151B",
     "secondaryColor": "#F1BF00",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0ml2zi1761148957",
+    "faceTop": 10
   },
   {
     "id": 8,
@@ -77,7 +91,9 @@
     "jerseyNumber": 19,
     "primaryColor": "#AA151B",
     "secondaryColor": "#F1BF00",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m9n4ja1761512633",
+    "faceTop": 10
   },
   {
     "id": 9,
@@ -87,7 +103,9 @@
     "jerseyNumber": 10,
     "primaryColor": "#FFD700",
     "secondaryColor": "#009C3B",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/av4ar01767782947",
+    "faceTop": 12
   },
   {
     "id": 10,
@@ -97,7 +115,9 @@
     "jerseyNumber": 9,
     "primaryColor": "#FFFFFF",
     "secondaryColor": "#003087",
-    "accentColor": "#CC0000"
+    "accentColor": "#CC0000",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895",
+    "faceTop": 10
   },
   {
     "id": 11,
@@ -107,7 +127,9 @@
     "jerseyNumber": 11,
     "primaryColor": "#CC0000",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#000000"
+    "accentColor": "#000000",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3blc581757088735",
+    "faceTop": 10
   },
   {
     "id": 12,
@@ -117,7 +139,9 @@
     "jerseyNumber": 7,
     "primaryColor": "#CC0001",
     "secondaryColor": "#000000",
-    "accentColor": "#FDDA24"
+    "accentColor": "#FDDA24",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o4flia1764089447",
+    "faceTop": 10
   },
   {
     "id": 13,
@@ -127,7 +151,9 @@
     "jerseyNumber": 22,
     "primaryColor": "#74ACDF",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#F6B40E"
+    "accentColor": "#F6B40E",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwxq811759408924",
+    "faceTop": 10
   },
   {
     "id": 14,
@@ -137,7 +163,9 @@
     "jerseyNumber": 9,
     "primaryColor": "#74ACDF",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#F6B40E"
+    "accentColor": "#F6B40E",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186",
+    "faceTop": 10
   },
   {
     "id": 15,
@@ -147,7 +175,9 @@
     "jerseyNumber": 10,
     "primaryColor": "#FF0000",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#003087"
+    "accentColor": "#003087",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756",
+    "faceTop": 10
   },
   {
     "id": 16,
@@ -157,7 +187,9 @@
     "jerseyNumber": 8,
     "primaryColor": "#AA151B",
     "secondaryColor": "#F1BF00",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/srwppu1424795582",
+    "faceTop": 10
   },
   {
     "id": 17,
@@ -167,7 +199,9 @@
     "jerseyNumber": 6,
     "primaryColor": "#AA151B",
     "secondaryColor": "#F1BF00",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/29005498.png",
+    "faceTop": 10
   },
   {
     "id": 18,
@@ -177,7 +211,9 @@
     "jerseyNumber": 7,
     "primaryColor": "#C60C30",
     "secondaryColor": "#003087",
-    "accentColor": "#FFFFFF"
+    "accentColor": "#FFFFFF",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262",
+    "faceTop": 10
   },
   {
     "id": 19,
@@ -187,7 +223,9 @@
     "jerseyNumber": 8,
     "primaryColor": "#006600",
     "secondaryColor": "#CC0000",
-    "accentColor": "#FFD700"
+    "accentColor": "#FFD700",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690",
+    "faceTop": 10
   },
   {
     "id": 20,
@@ -197,6 +235,8 @@
     "jerseyNumber": 8,
     "primaryColor": "#5AAAA0",
     "secondaryColor": "#FFFFFF",
-    "accentColor": "#000000"
+    "accentColor": "#000000",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5249151768499204",
+    "faceTop": 10
   }
 ]

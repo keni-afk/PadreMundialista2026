@@ -1,46 +1,15 @@
 /**
  * PlayerCard — shows a real player photo with a red circle covering the face.
+ * Photos are hardcoded in players.json (no API call at runtime).
+ * `faceTop` (%) in player data positions the circle center over the face.
  * When `revealed=true`, the circle animates away to reveal the face.
- * Falls back to the SVG jersey card if the photo can't be loaded.
+ * Falls back to the SVG jersey card if the photo fails to load.
  */
-import { useState, useEffect } from 'react'
-
-// Some players need a different search string for thesportsdb
-const SEARCH_OVERRIDES = {
-  'Vinicius Jr': 'Vinicius Junior',
-  'Lamine Yamal': 'Lamine Yamal',
-  'Kylian Mbappé': 'Kylian Mbappe',
-  'Luka Modrić': 'Luka Modric',
-  'Julián Álvarez': 'Julian Alvarez',
-  'Lautaro Martínez': 'Lautaro Martinez',
-}
+import { useState } from 'react'
 
 const PlayerCard = ({ player, showName = false, revealed = false }) => {
-  const [photoUrl, setPhotoUrl] = useState(null)
   const [photoReady, setPhotoReady] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    if (!player) {
-      setPhotoUrl(null)
-      setPhotoReady(false)
-      return
-    }
-    setPhotoUrl(null)
-    setPhotoReady(false)
-    setLoading(true)
-
-    const query = SEARCH_OVERRIDES[player.name] || player.name
-    fetch(`https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${encodeURIComponent(query)}`)
-      .then(r => r.json())
-      .then(data => {
-        const p = data?.player?.[0]
-        const url = p?.strCutout || p?.strThumb
-        if (url) setPhotoUrl(url)
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false))
-  }, [player?.id])
+  const [photoFailed, setPhotoFailed] = useState(false)
 
   /* ── Empty state ───────────────────────────────────── */
   if (!player) {
@@ -57,7 +26,7 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
     )
   }
 
-  const { primaryColor, secondaryColor, accentColor, jerseyNumber, countryIso, country, name } = player
+  const { primaryColor, secondaryColor, accentColor, jerseyNumber, countryIso, country, name, photo, faceTop = 10 } = player
 
   return (
     <div
@@ -83,46 +52,46 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
       {/* ── Photo area ──────────────────────────────────── */}
       <div className="relative flex justify-center items-end overflow-hidden" style={{ height: 308 }}>
 
-        {photoUrl ? (
+        {photo && !photoFailed ? (
           <>
             {/* Real player photo */}
             <img
-              src={photoUrl}
+              src={photo}
               alt={name}
               onLoad={() => setPhotoReady(true)}
-              onError={() => { setPhotoUrl(null); setPhotoReady(false) }}
+              onError={() => setPhotoFailed(true)}
               className="h-full w-full object-contain object-bottom"
               style={{ opacity: photoReady ? 1 : 0, transition: 'opacity 0.4s ease' }}
             />
 
-            {/* Loading spinner while photo fetches */}
+            {/* Loading shimmer */}
             {!photoReady && (
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                 <div className="text-5xl animate-bounce-slow">⚽</div>
-                <p className="text-white/40 text-xs uppercase tracking-wider">Cargando foto...</p>
               </div>
             )}
 
-            {/* Red circle — covers the face until revealed */}
+            {/* Red circle — center is at faceTop% from container top */}
             {photoReady && (
               <div
                 style={{
                   position: 'absolute',
-                  top: '3%',
+                  top: `${faceTop}%`,
                   left: '50%',
-                  width: 112,
-                  height: 112,
+                  width: 116,
+                  height: 116,
                   borderRadius: '50%',
                   background: 'radial-gradient(circle at 35% 35%, #ff4d4d 0%, #cc0000 55%, #7a0000 100%)',
-                  boxShadow: revealed
-                    ? 'none'
-                    : '0 0 32px rgba(255,0,0,0.75), 0 4px 18px rgba(0,0,0,0.5)',
+                  boxShadow: revealed ? 'none' : '0 0 32px rgba(255,0,0,0.75), 0 4px 18px rgba(0,0,0,0.5)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  transition: 'transform 0.55s cubic-bezier(0.34,1.56,0.64,1), opacity 0.45s ease',
-                  transform: revealed ? 'translateX(-50%) scale(0)' : 'translateX(-50%) scale(1)',
+                  /* center of circle lands at faceTop% */
+                  transform: revealed
+                    ? 'translate(-50%, -50%) scale(0)'
+                    : 'translate(-50%, -50%) scale(1)',
                   opacity: revealed ? 0 : 1,
+                  transition: 'transform 0.55s cubic-bezier(0.34,1.56,0.64,1), opacity 0.45s ease',
                   pointerEvents: 'none',
                   zIndex: 20,
                 }}
