@@ -1,17 +1,22 @@
 /**
- * PlayerCard — shows a real player photo with a red circle covering the face.
- * Photos are hardcoded in players.json (no API call at runtime).
- * `faceTop` (%) in player data positions the circle center over the face.
- * When `revealed=true`, the circle animates away to reveal the face.
- * Falls back to the SVG jersey card if the photo fails to load.
+ * PlayerCard — real player photo with a red circle covering the face.
+ * `faceTop` (%) controls where the circle center sits vertically.
+ * When `revealed=true`, the circle animates away.
+ * Falls back to SVG jersey if photo fails.
  */
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const PlayerCard = ({ player, showName = false, revealed = false }) => {
   const [photoReady, setPhotoReady] = useState(false)
-  const [photoFailed, setPhotoFailed] = useState(false)
+  const [photoError, setPhotoError] = useState(false)
 
-  /* ── Empty state ───────────────────────────────────── */
+  // Reset photo state whenever the player changes
+  useEffect(() => {
+    setPhotoReady(false)
+    setPhotoError(false)
+  }, [player?.id])
+
+  /* ── Empty state ─────────────────────────────── */
   if (!player) {
     return (
       <div
@@ -26,7 +31,13 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
     )
   }
 
-  const { primaryColor, secondaryColor, accentColor, jerseyNumber, countryIso, country, name, photo, faceTop = 10 } = player
+  const {
+    primaryColor, secondaryColor, accentColor,
+    jerseyNumber, countryIso, country, name,
+    photo, faceTop = 10
+  } = player
+
+  const showPhoto = photo && !photoError
 
   return (
     <div
@@ -49,61 +60,58 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
         </span>
       </div>
 
-      {/* ── Photo area ──────────────────────────────────── */}
+      {/* ── Photo / SVG area ─────────────────────── */}
       <div className="relative flex justify-center items-end overflow-hidden" style={{ height: 308 }}>
 
-        {photo && !photoFailed ? (
+        {showPhoto ? (
           <>
-            {/* Real player photo */}
-            <img
-              src={photo}
-              alt={name}
-              onLoad={() => setPhotoReady(true)}
-              onError={() => setPhotoFailed(true)}
-              className="h-full w-full object-contain object-bottom"
-              style={{ opacity: photoReady ? 1 : 0, transition: 'opacity 0.4s ease' }}
-            />
-
-            {/* Loading shimmer */}
+            {/* Loading spinner until image is ready */}
             {!photoReady && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-5xl animate-bounce-slow">⚽</div>
               </div>
             )}
 
-            {/* Red circle — center is at faceTop% from container top */}
-            {photoReady && (
-              <div
-                style={{
-                  position: 'absolute',
-                  top: `${faceTop}%`,
-                  left: '50%',
-                  width: 116,
-                  height: 116,
-                  borderRadius: '50%',
-                  background: 'radial-gradient(circle at 35% 35%, #ff4d4d 0%, #cc0000 55%, #7a0000 100%)',
-                  boxShadow: revealed ? 'none' : '0 0 32px rgba(255,0,0,0.75), 0 4px 18px rgba(0,0,0,0.5)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  /* center of circle lands at faceTop% */
-                  transform: revealed
-                    ? 'translate(-50%, -50%) scale(0)'
-                    : 'translate(-50%, -50%) scale(1)',
-                  opacity: revealed ? 0 : 1,
-                  transition: 'transform 0.55s cubic-bezier(0.34,1.56,0.64,1), opacity 0.45s ease',
-                  pointerEvents: 'none',
-                  zIndex: 20,
-                }}
-              >
-                <span style={{ fontSize: 40, lineHeight: 1 }}>❓</span>
-              </div>
-            )}
+            {/* Real photo */}
+            <img
+              key={player.id}
+              src={photo}
+              alt={name}
+              onLoad={() => setPhotoReady(true)}
+              onError={() => setPhotoError(true)}
+              className="h-full w-full object-contain object-bottom"
+              style={{ opacity: photoReady ? 1 : 0, transition: 'opacity 0.35s ease' }}
+            />
+
+            {/* Red circle — center at faceTop% */}
+            <div
+              style={{
+                position: 'absolute',
+                top: `${faceTop}%`,
+                left: '50%',
+                width: 118,
+                height: 118,
+                borderRadius: '50%',
+                background: 'radial-gradient(circle at 35% 35%, #ff4d4d 0%, #cc0000 55%, #7a0000 100%)',
+                boxShadow: revealed ? 'none' : '0 0 32px rgba(255,0,0,0.8), 0 4px 18px rgba(0,0,0,0.5)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transform: revealed
+                  ? 'translate(-50%, -50%) scale(0)'
+                  : 'translate(-50%, -50%) scale(1)',
+                opacity: revealed ? 0 : 1,
+                transition: 'transform 0.55s cubic-bezier(0.34,1.56,0.64,1), opacity 0.45s ease',
+                pointerEvents: 'none',
+                zIndex: 20,
+              }}
+            >
+              {!revealed && <span style={{ fontSize: 40, lineHeight: 1 }}>❓</span>}
+            </div>
           </>
         ) : (
-          /* ── SVG jersey fallback ─────────────────────── */
+          /* ── SVG jersey fallback ──────────────── */
           <div className="relative flex justify-center items-center w-full h-full">
-            {/* Watermark number */}
             <div
               className="absolute inset-0 flex items-center justify-center select-none pointer-events-none"
               style={{
@@ -127,7 +135,6 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
                 {jerseyNumber}
               </text>
               <rect x="62" y="215" width="56" height="28" rx="4" fill={secondaryColor} opacity="0.8" />
-              {/* Face circle */}
               <circle cx="90" cy="52" r="36" fill="white" stroke={accentColor} strokeWidth="3" opacity="0.95" />
               <text x="90" y="60" textAnchor="middle" fontSize="36" fill="#555">❓</text>
             </svg>
@@ -135,7 +142,7 @@ const PlayerCard = ({ player, showName = false, revealed = false }) => {
         )}
       </div>
 
-      {/* ── Bottom: flag + name ─────────────────────────── */}
+      {/* ── Bottom: flag + label ─────────────────── */}
       <div className="relative z-10 flex flex-col items-center pb-3 gap-1">
         <img
           src={`https://flagcdn.com/w40/${countryIso}.png`}
