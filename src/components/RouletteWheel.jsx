@@ -169,8 +169,8 @@ const RouletteWheel = forwardRef(function RouletteWheel({ onSpinComplete, disabl
       />
       <canvas
         ref={canvasRef}
-        width={480}
-        height={480}
+        width={380}
+        height={380}
         className="block"
         style={{ filter: isSpinning ? 'drop-shadow(0 0 24px #FFD700)' : 'drop-shadow(0 4px 16px rgba(0,0,0,0.6))' }}
       />

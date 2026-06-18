@@ -74,7 +74,7 @@ export default function Roulette({ onBack }) {
   const isGuessing = phase === PHASES.GUESSING || phase === PHASES.RESULT
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
 
       {/* ── Header ─────────────────────────────────── */}
       <div
@@ -98,10 +98,10 @@ export default function Roulette({ onBack }) {
       </div>
 
       {/* ── Two-column layout ───────────────────────── */}
-      <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-10 px-6 py-8">
+      <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-5 px-4 py-3 overflow-hidden">
 
         {/* LEFT: wheel */}
-        <div className="flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center gap-3">
           <h1
             className="text-center font-black uppercase"
             style={{

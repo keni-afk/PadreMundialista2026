@@ -42,7 +42,7 @@ function QuizSetup({ onStart, onBack }) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       {/* Header */}
       <div
         style={{
@@ -64,11 +64,11 @@ function QuizSetup({ onStart, onBack }) {
         <div className="w-24" />
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-10 gap-10 max-w-2xl mx-auto w-full">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 py-4 gap-5 max-w-2xl mx-auto w-full">
 
         {/* Header */}
         <div className="text-center animate-slide-up">
-          <div className="text-7xl mb-4 float select-none">🏆</div>
+          <div className="text-5xl mb-2 float select-none">🏆</div>
           <h1
             className="font-black uppercase"
             style={{
@@ -107,7 +107,7 @@ function QuizSetup({ onStart, onBack }) {
               <button
                 key={n}
                 onClick={() => handleQuick(n)}
-                className="flex flex-col items-center gap-2 rounded-2xl py-6 font-black text-white transition-all duration-200 hover:scale-105 active:scale-95"
+                className="flex flex-col items-center gap-2 rounded-2xl py-4 font-black text-white transition-all duration-200 hover:scale-105 active:scale-95"
                 style={{
                   background: bgs[i],
                   border: '2px solid rgba(255,255,255,0.12)',
@@ -174,7 +174,7 @@ function QuizSetup({ onStart, onBack }) {
 function QuizCompleted({ score, total, onRestart, onBack }) {
   const pct = Math.round((score / total) * 100)
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 gap-8 animate-fade-in">
+    <div className="h-screen flex flex-col items-center justify-center px-6 gap-5 animate-fade-in overflow-hidden">
       {/* Glow orb behind trophy */}
       <div
         style={{
@@ -186,7 +186,7 @@ function QuizCompleted({ score, total, onRestart, onBack }) {
         }}
       />
       <div className="relative text-center">
-        <div className="text-8xl mb-6 float select-none">🏆</div>
+        <div className="text-6xl mb-3 float select-none">🏆</div>
         <h1
           className="font-black uppercase mb-3"
           style={{
@@ -306,7 +306,7 @@ export default function Quiz({ onBack }) {
 
   // ── Render quiz
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       {/* Header */}
       <div
         style={{
@@ -352,11 +352,11 @@ export default function Quiz({ onBack }) {
         <span style={{ color: 'rgba(255,184,0,0.6)', fontSize: '0.85rem' }}>⭐ {score} pts</span>
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center px-4 py-4 gap-8 max-w-3xl mx-auto w-full">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 py-2 gap-4 max-w-3xl mx-auto w-full">
 
         {/* Question card */}
         <div
-          className="w-full rounded-3xl p-8 text-center animate-slide-up"
+          className="w-full rounded-3xl p-5 text-center animate-slide-up"
           style={{
             background: 'linear-gradient(160deg, rgba(255,184,0,0.08) 0%, rgba(255,255,255,0.04) 100%)',
             border: '2px solid rgba(255,184,0,0.25)',
@@ -364,7 +364,7 @@ export default function Quiz({ onBack }) {
             backdropFilter: 'blur(12px)',
           }}
         >
-          <div className="text-4xl mb-4">⚽</div>
+          <div className="text-3xl mb-2">⚽</div>
           <p
             className="font-black text-white leading-tight"
             style={{ fontSize: 'clamp(1.3rem, 3vw, 1.9rem)', textShadow: '0 2px 16px rgba(0,0,0,0.5)' }}
@@ -374,7 +374,7 @@ export default function Quiz({ onBack }) {
         </div>
 
         {/* Answer options */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full animate-fade-in">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full animate-fade-in">
           {question.options.map((opt, idx) => {
             const style = OPTION_STYLES[idx]
             let bg = `linear-gradient(135deg, ${style.bg}cc, ${style.bg})`
@@ -401,7 +401,7 @@ export default function Quiz({ onBack }) {
                 key={idx}
                 onClick={() => handleAnswer(idx)}
                 disabled={selected !== null}
-                className="answer-btn rounded-2xl p-5 text-left font-bold text-white text-xl flex items-center gap-4"
+                className="answer-btn rounded-2xl p-4 text-left font-bold text-white text-lg flex items-center gap-3"
                 style={{
                   background: bg,
                   border: `2px solid ${border}`,

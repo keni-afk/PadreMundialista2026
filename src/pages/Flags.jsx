@@ -35,7 +35,7 @@ export default function Flags({ onBack }) {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
 
       {/* ── Header ─────────────────────────────────── */}
       <div
@@ -58,7 +58,7 @@ export default function Flags({ onBack }) {
         <div className="w-24" />
       </div>
 
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-8 gap-8">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 py-3 gap-4">
 
         {/* Question */}
         <div className="text-center animate-fade-in">
@@ -121,7 +121,7 @@ export default function Flags({ onBack }) {
                   src={`https://flagcdn.com/w160/${country.iso}.png`}
                   alt={country.country}
                   className="w-full rounded-lg shadow-md"
-                  style={{ maxHeight: 90, objectFit: 'cover' }}
+                  style={{ maxHeight: 70, objectFit: 'cover' }}
                   onError={(e) => { e.target.src = `https://flagcdn.com/w80/${country.iso}.png` }}
                 />
                 <span
